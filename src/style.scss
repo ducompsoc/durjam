@@ -713,6 +713,7 @@ footer {
     color: #000;
     font-size: 28px;
     padding: 20px 64px;
+    text-decoration: none;
     margin-bottom: 32px;
     cursor: pointer;
     transition: .3s ease;
@@ -725,11 +726,6 @@ footer {
     &:active {
         margin: 2px 0px 30px 0px;
     }
-
-    /* Remove me when signups are open: */
-    opacity: 0.4;
-    cursor: not-allowed;
-    pointer-events: none;
 }
 
 .wow-active:not(.animated):not(.no-delay) {

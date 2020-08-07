@@ -2,3 +2,8 @@
 	from = "/discord"
 	to = "https://discord.gg/WdQCy6b"
 	status = 302
+
+[[redirects]]
+	from = "/signup"
+	to = "https://ducompsoc.typeform.com/to/WRZ4bjwR"
+	status = 302
