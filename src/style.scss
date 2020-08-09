@@ -3,7 +3,7 @@ $color-secondary: #C65A7F;
 
 $breakpoint-xlg: 1200px;
 $breakpoint-lg: 1100px;
-$breakpoint-md: 960px;
+$breakpoint-md: 1005px;
 
 body, button, input {
     font-family: Oxygen, Arial, Helvetica, sans-serif;
@@ -101,6 +101,19 @@ a {
     .foreground {
         position: relative;
         z-index: 1;
+        padding: 32px 0px;
+    }
+
+    .logo {
+        margin-bottom: 64px;
+
+        img {
+            width: 100px;
+        }
+
+        .text {
+            margin-top: 3px;
+        }
     }
 
     .hero {
@@ -451,12 +464,8 @@ a {
             pointer-events: none;
             overflow: hidden;
 
-            @media screen and (max-width: $breakpoint-xlg) {
-                right: calc(200px + 72px);
-            }
-    
             @media screen and (max-width: $breakpoint-lg) {
-                right: calc(200px + 28px);
+                right: calc(200px + 78px);
             }
         }
     }
@@ -519,7 +528,8 @@ a {
 
         > .container {
             position: relative;
-            min-height: 100vh;
+            height: 100vh;
+            min-height: 800px;
 
             .inner {
                 max-width: 480px;
@@ -586,32 +596,29 @@ a {
             height: 50vh;
             overflow: hidden;
 
-            @media screen and (max-width: $breakpoint-xlg) {
-                right: 250px;
-            }
-    
             @media screen and (max-width: $breakpoint-lg) {
-                right: 205px;
+                right: 253px;
             }
         }
     }
 
     .hero {
         position: absolute;
-        right: -12px;
-        transform: scale(1.4);
+        right: -38px;
+        transform: scale(1);
         z-index: 1;
+        margin-top: -72px;
 
-        @media screen and (max-width: $breakpoint-xlg) {
-            transform: scale(1.2);
-            right: -48px;
+        img {
+            width: auto;
+            height: 580px;
         }
 
         @media screen and (max-width: $breakpoint-lg) {
-            transform: scale(0.9);
-            right: -96px;
+            transform: scale(0.7);
+            right: -72px;
         }
-
+        
         @media screen and (max-width: $breakpoint-md) {
             display: none;
         }
