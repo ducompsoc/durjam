@@ -7,7 +7,7 @@ const browserSync = require('browser-sync').create();
 sass.compiler = require('node-sass');
 
 gulp.task('assets', () => {
-    return gulp.src('./src/**/*.{html,js,svg,png,jpg,jpeg,gif}')
+    return gulp.src('./src/**/*.{html,js,svg,png,jpg,jpeg,gif,ico}')
         .pipe(gulp.dest('./dist'));
 });
 
