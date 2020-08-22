@@ -4,6 +4,7 @@ $color-secondary: #C65A7F;
 $breakpoint-xlg: 1200px;
 $breakpoint-lg: 1100px;
 $breakpoint-md: 1005px;
+$breakpoint-xs: 540px;
 
 body, button, input {
     font-family: Oxygen, Arial, Helvetica, sans-serif;
@@ -239,6 +240,45 @@ a {
 
         svg path {
             stroke-dasharray: 3700;
+        }
+    }
+
+    .sponsors {
+        .row {
+            margin: 0px 0px 0px -6px;
+
+            > div {
+                width: 25%;
+                box-sizing: border-box;
+                padding: 6px;
+
+                @media screen and (max-width: $breakpoint-md) {
+                    width: 50%;
+                }
+
+                @media screen and (max-width: $breakpoint-xs) {
+                    width: 100%;
+                }
+
+                > a {
+                    box-shadow: 0px 0px 6px $color-primary;
+                    box-sizing: border-box;
+                    text-align: center;
+                    padding: 24px;
+                    transition: .3s ease;
+
+                    &:hover {
+                        box-shadow: 0px 0px 12px $color-primary;
+                    }
+
+                    > div {
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        height: 96px;
+                    }
+                }
+            }
         }
     }
 }
