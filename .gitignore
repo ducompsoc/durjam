@@ -30,6 +30,7 @@
 
 ## Biome.js
 !biome.json
+!/biome-base.json
 
 ## Husky
 !.husky

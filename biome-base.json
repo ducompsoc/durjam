@@ -1,0 +1,53 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "files": {
+    "include": [
+      "src/**/*",
+      "test/**/*",
+      "*config*.ts",
+      "*config*.mts",
+      "*config*.cts",
+      "*config*.js",
+      "*config*.mjs",
+      "*config*.cjs",
+      "*config*.json",
+      "*.cjs",
+      "*.mjs",
+      "*.js",
+      "*rc.json",
+      "package.json",
+      "biome*.json",
+      ".editorconfig",
+      ".gitattributes",
+      ".gitignore"
+    ],
+    "ignore": ["node_modules", "dist", "coverage", ".pnpm-store", ".idea", ".vscode"]
+  },
+  "formatter": {
+    "enabled": true,
+    "useEditorconfig": true,
+    "formatWithErrors": false
+  },
+  "organizeImports": { "enabled": true },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "style": {
+        "noParameterAssign": "off"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "arrowParentheses": "always",
+      "bracketSameLine": false,
+      "bracketSpacing": true,
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "quoteStyle": "double",
+      "semicolons": "asNeeded",
+      "trailingCommas": "all"
+    }
+  }
+}
