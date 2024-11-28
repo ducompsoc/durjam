@@ -15,6 +15,7 @@
 !pnpm-lock.yaml
 !pnpm-workspace.yaml
 !.npmignore
+!.npmrc
 
 ## Config files
 !*config*.ts
