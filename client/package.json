@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/package",
   "name": "@durjam/client",
   "private": true,
   "scripts": {
