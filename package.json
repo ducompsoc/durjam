@@ -11,6 +11,7 @@
     "check": "biome check .",
     "check:fix": "biome check --write .",
     "r:check": "pnpm -r run check",
-    "r:check:fix": "pnpm -r run check:fix"
+    "r:check:fix": "pnpm -r run check:fix",
+    "prepare": "husky"
   }
 }
