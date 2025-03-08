@@ -2,7 +2,7 @@ import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-export default function Example() {
+export default function Home() {
   return (
     <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 min-h-screen">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
