@@ -1,6 +1,7 @@
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import styles from "./Home.module.css"
 
 export default function Home() {
   return (
@@ -31,23 +32,17 @@ export default function Home() {
           </a>
         </div>
         <div className="mx-auto mt-5 max-w-2xl flex flex-col">
-          <a
-            href="https://forms.gle/FiR6rnLjmFw562MPA"
-            className="my-5 block text-center mx-auto px-8 py-4 bg-purple-600 text-white rounded-full hover:bg-purple-700"
-          >
+          <a href="https://forms.gle/FiR6rnLjmFw562MPA" className={styles.buttonLink}>
             Register your Interest to Participate!
           </a>
           <h2 className="text-3xl font-semibold text-center my-5">Learn more about DurJam</h2>
           <a
             href="https://subdued-lupin-877.notion.site/DurJam-JamPacks-15c9eeb1fa3680fea32ecc7c0e8c70c2"
-            className="my-2 block text-center mx-auto px-8 py-4 bg-purple-600 text-white rounded-full hover:bg-purple-700"
+            className={styles.buttonLink}
           >
             Check out JamPacks, our Game Development Tutorials
           </a>
-          <a
-            href="https://durjam.devpost.com/project-gallery"
-            className="my-2 block text-center mx-auto px-8 py-4 bg-purple-600 text-white rounded-full hover:bg-purple-700"
-          >
+          <a href="https://durjam.devpost.com/project-gallery" className={styles.buttonLink}>
             Check out the Games from DurJam 2020
           </a>
         </div>

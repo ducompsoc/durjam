@@ -1,0 +1,3 @@
+.buttonLink {
+  @apply my-2 block text-center mx-auto px-8 py-4 bg-purple-600 text-white rounded-full hover:bg-purple-700;
+}
