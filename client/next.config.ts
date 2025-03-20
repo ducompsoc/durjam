@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/sponsor",
-        destination: "https://drive.google.com/file/d/1MSkVKuZ1VIUbRjib5zWSvRZEzUO8Zrfs",
+        destination: "https://drive.google.com/file/d/1dkC5kIDCT_AXOTUbF05n5IPCsqDDFbBh",
         permanent: false,
       },
     ]
