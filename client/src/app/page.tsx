@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons"
@@ -7,42 +7,47 @@ import { useState } from "react"
 import styles from "./Home.module.css"
 
 export default function Home() {
-  const [showFaq, setShowFaq] = useState(false);
-  
+  const [showFaq, setShowFaq] = useState(false)
+
   const faqItems = [
     {
       question: "What is DurJam?",
-      answer: "DurJam is DU Computing Society's Game Jam & Durham's Society for Game Development. We organize game jams and provide resources for game developers in Durham."
+      answer:
+        "DurJam is DU Computing Society's Game Jam & Durham's Society for Game Development. We organize game jams and provide resources for game developers in Durham.",
     },
     {
       question: "Who can participate in DurJam events?",
-      answer: "Anyone interested in game development can participate! Whether you're a beginner or experienced developer, artist, musician, or writer - all are welcome."
+      answer:
+        "Anyone interested in game development can participate! Whether you're a beginner or experienced developer, artist, musician, or writer - all are welcome.",
     },
     {
       question: "Do I need prior game development experience?",
-      answer: "No prior experience is necessary! We provide resources like our JamPacks tutorials to help beginners get started. Game jams are a great way to learn game development."
+      answer:
+        "No prior experience is necessary! We provide resources like our JamPacks tutorials to help beginners get started. Game jams are a great way to learn game development.",
     },
     {
       question: "What should I bring to a game jam?",
-      answer: "Bring your computer, charger, and any peripherals you need. We recommend installing game development software beforehand, but we'll provide guidance on tools and resources."
+      answer:
+        "Bring your computer, charger, and any peripherals you need. We recommend installing game development software beforehand, but we'll provide guidance on tools and resources.",
     },
     {
       question: "How can I stay updated about upcoming events?",
-      answer: "Follow us on Instagram and LinkedIn, and register your interest through our form to receive updates about upcoming events and workshops."
-    }
-  ];
+      answer:
+        "Follow us on Instagram and LinkedIn, and register your interest through our form to receive updates about upcoming events and workshops.",
+    },
+  ]
 
   const toggleFaq = () => {
-    setShowFaq(!showFaq);
-    
+    setShowFaq(!showFaq)
+
     if (!showFaq) {
       setTimeout(() => {
-        document.getElementById('faq-section')?.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
+        document.getElementById("faq-section")?.scrollIntoView({ behavior: "smooth" })
+      }, 100)
     } else {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.scrollTo({ top: 0, behavior: "smooth" })
     }
-  };
+  }
 
   return (
     <div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 min-h-screen">
@@ -85,32 +90,34 @@ export default function Home() {
           <a href="https://durjam.devpost.com/project-gallery" className={styles.buttonLink}>
             Check out the Games from DurJam 2020
           </a>
-          <button 
-            onClick={toggleFaq} 
+          <button
+            type="button"
+            onClick={toggleFaq}
             className={styles.buttonLink}
-            style={{ border: 'none', cursor: 'pointer' }}
+            style={{ border: "none", cursor: "pointer" }}
           >
-            {showFaq ? 'Hide FAQ' : 'Frequently Asked Questions'}
+            {showFaq ? "Hide FAQ" : "Frequently Asked Questions"}
           </button>
         </div>
-        
+
         {/* FAQ Section */}
         {showFaq && (
           <div id="faq-section" className="mx-auto max-w-3xl mt-12">
             <h2 className="text-3xl font-semibold text-center text-white mb-8">Frequently Asked Questions</h2>
             <div className="space-y-6">
-              {faqItems.map((item, index) => (
-                <div key={index} className="bg-gray-800 rounded-lg p-6">
+              {faqItems.map((item) => (
+                <div key={item.question} className="bg-gray-800 rounded-lg p-6">
                   <h3 className="text-xl font-medium text-white mb-3">{item.question}</h3>
                   <p className="text-gray-300">{item.answer}</p>
                 </div>
               ))}
             </div>
             <div className="mt-8 text-center">
-              <button 
-                onClick={toggleFaq} 
+              <button
+                type="button"
+                onClick={toggleFaq}
                 className={styles.buttonLink}
-                style={{ border: 'none', cursor: 'pointer' }}
+                style={{ border: "none", cursor: "pointer" }}
               >
                 Hide FAQ Section
               </button>
